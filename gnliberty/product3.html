@@ -96,8 +96,6 @@
 </div>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="resource/js/lib/handlebars-v4.0.10.js"></script>
-<script type="text/javascript" src="resource/js/lib/loadTemplate.js"></script>
 <script type="text/javascript">
 $(function () {    
     $('.movie-thumb').on('click', function(e){
@@ -106,13 +104,6 @@ $(function () {
         $('.movie').removeClass('active').empty().html(source);
     });
 });
-var tpl = new LoadTemplate('footer', 'templates');
-tpl.create(function(){ 
-    var footersource = $("#footer-template").html();
-    var footertemplate = Handlebars.compile(footersource);
-    var footerhtml = footertemplate();
-    $('#footer').append(footerhtml);
-    });
 </script>
 </body>
 </html>
