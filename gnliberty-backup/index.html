@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>지엔리버티</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+<link rel="stylesheet" href="resource/css/lib/swiper.min.css">
+<link rel="stylesheet" href="resource/css/common.css">
+</head>
+
+<body class="main">
+<div id="skip">
+    <a href="#header">메인 메뉴 바로가기</a>
+    <a href="#container">본문 바로가기</a>
+    <a href="#footer">본문 바로가기</a>
+</div>
+
+<div id="header">
+    <div class="wrap">
+        <h1 class="header-logo"><a href="./index.html">지엔리버티</a></h1>
+        <div class="header-links">
+            <a href="./index.html" class="header-home">HOME</a>
+            <a href="./customer.html" class="header-contact">CONTACT</a>
+        </div>
+        <div class="header-nav">
+            <a href="./company.html">회사소개</a>
+            <a href="./partner.html">파트너</a>
+            <a href="./product1.html">제품소개</a>
+            <a href="./customer.html">고객지원</a>
+        </div>
+    </div>
+</div>
+
+<div id="container">
+    <h2 class="blind">지엔리버티 메인</h2>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="image/main-swipe1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="image/main-swipe2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="image/main-swipe3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="image/main-swipe4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="image/main-swipe5.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>    
+    <div class="wrap">
+        <h3>신뢰를 최우선으로 하는 글로벌 신소재 파트너 <strong class="point-text">(주)지엔리버티</strong></h3>
+        <div class="product-links">
+            <a href="./product3.html" class="link link1">FireLite 자세히 보기</a>
+            <a href="./product3.html#FireLitePlus" class="link link2">FireLite Plus 자세히 보기</a>
+            <a href="./product2.html" class="link link3">Neoceram 자세히 보기</a>
+            <a href="./product1.html" class="link link4">Stella Shine 자세히 보기</a>
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div class="wrap">
+        <div class="footer-logo"><a href="./index.html">지엔리버티</a></div>
+        <div class="footer-info">
+            <div class="footer-about">상호 : (주)지엔리버티  대표이사 : 정근섭  사업자등록번호 :370-88-00737 </div>
+            <div class="footer-address">사업장주소 : 서울시 서초구 서운로 19, 602호 (서초동, 서초월드오피스텔) 대표전화 : 02-6951-0321  FAX : 02-6951-0322</div>
+            <div class="footer-copyright">Copyright www.gnliberty.co.kr</div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="resource/js/lib/swiper.min.js"></script>
+<script type="text/javascript">
+$(function () {
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay: 5000
+    });
+});
+</script>
+</body>
+</html>
