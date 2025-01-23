@@ -33,26 +33,31 @@ a:hover{color:#999;text-decoration:underline;cursor:pointer}
 table.fixed{table-layout:fixed}
 
 #skip{margin:0;padding:0}
-#skip a{position:absolute;left:0;top:-100px;z-index:5000;display:block;padding:8px 0 7px;width:100%;background:#1699d3;color:#fff;text-align:center;text-decoration:none;outline:0}
+#skip a{position:absolute;left:0;top:-100px;z-index:5000;display:block;padding:8px 0 7px;width:100%;background:#1177bc;color:#fff;text-align:center;text-decoration:none;outline:0}
 #skip a:active,#skip a:focus{top:0;font-size:12px;font-weight:bold;line-height:1.5}
 
 .wrap{overflow:hidden;position:relative;margin:0 auto;width:1000px}
-.sp_common,.header-logo,.header-home,.header-contact,.footer-logo{overflow:hidden;display:block;background:url(/images/common.png) no-repeat -999em -999em;text-indent:-999em}
 
 #header{width:100%;height:129px;background:#fff}
-.header-logo{float:left;margin-top:24px;width:346px;height:78px;background:url(/images/header-logo.jpg) no-repeat 0 0}
+.header-logo{overflow:hidden;display:block;text-indent:-999em;float:left;margin-top:24px;width:346px;height:78px;background:url(/images/header-logo.jpg) no-repeat 0 0}
 .header-logo>a{display:block}
-.header-home{width:44px;height:45px;background-position:-230px 0}
-.header-contact{width:62px;height:45px;background-position:-280px 0}
-.header-ko{width:48px;height:45px;background:url(/images/common-link-ko.png) no-repeat 0 0;text-indent:-999em}
-.header-en{width:55px;height:45px;background:url(/images/common-link-en.png) no-repeat 0 0;text-indent:-999em}
+.header-home,
+.header-contact,
+.header-ko,
+.header-en{overflow:hidden;display:block;text-indent:-999em;width:55px;height:45px;background:url(/images/common-link-ko.png) no-repeat 0 0;background-size:228px auto }
+
+.header-home{width:48px;height:45px;background-position:-8px 10px}
+.header-contact{width:66px;height:45px;background-position:-75px 10px}
+.header-ko{width:58px;height:45px;background-position:-160px 10px}
+.header-en{width:58px;height:45px;background-position:-160px 10px; background-image:url(/images/common-link-en.png)}
 .header-links{position:absolute;right:0;top:0}
 .header-links>a{display:block;float:left;margin-left:20px;color:#fff}
 .header-nav{float:right;margin-top:58px;margin-right:-44px}
 .header-nav>a{display:inline-block;padding:10px 44px;color:#484848;font-size:16px;font-weight:700;text-decoration:none}
-.header-nav>.active-nav{color:#1699d3}
-#footer{padding:30px 0 20px;background:#312f2d;text-align:center}
-.footer-logo{margin:0 auto 20px;width:354px;height:78px;background:url(/images/footer-logo.jpg) no-repeat}
+.header-nav>.active-nav{color:#1177bc}
+#footer{padding:40px 0 20px;background:#312f2d;text-align:center}
+.footer-logo{overflow:hidden;display:block;text-indent:-999em;margin:0 auto 20px;width:354px;height:78px;background:url(/images/footer-logo.jpg) no-repeat}
+.footer-info{overflow:hidden;display:block;text-indent:-999em;margin:0 auto 20px;width:840px;height:123px;background:url(/images/footer-info.png) no-repeat;background-size:840px auto}
 .footer-about,.footer-address,.footer-copyright{color:#e7e7e7;font-size:12px;font-weight:700}
 
 #container{margin:0 auto;padding-bottom:235px}
@@ -68,7 +73,7 @@ table.fixed{table-layout:fixed}
 #container.customer{background-image:url(/images/top-customer.jpg)}
 #container .wrap{margin-top:75px}
 .tabs{margin:0 auto;width:694px;height:170px}
-.tabs>h2{margin-bottom:15px;color:#1699d3;font-size:24px;font-weight:800;text-align: center}
+.tabs>h2{margin-bottom:15px;color:#1177bc;font-size:24px;font-weight:800;text-align:center}
 .tabs .tab{overflow:hidden;display:inline-block;width:170px;height:54px;background:url(/images/cont-product.jpg) no-repeat;text-indent:-999em}
 .tabs .tab1{background-position:0 -50px}
 .tabs .tab2{background-position:-175px -50px}
@@ -83,21 +88,21 @@ table.fixed{table-layout:fixed}
 .tabs .tab3.active{background-position:-350px -170px}
 .tabs .tab4.active{background-position:-525px -170px}
 h3.title{margin-bottom:50px;font-size:27px;font-weight:800}
-h4{margin-top:20px;color:#1699d3}
+h4{margin-top:20px;color:#1177bc}
 h4.dot:before{content:"•"}
 p.indent{padding-left:15px}
 p.img{margin-top:60px;text-align:center}
 p.img>img{vertical-align:bottom}
 span.img>img{vertical-align:top}
 .movie{margin:50px auto 70px;width:709px;height:471px}
-.point-text{color:#1699d3}
+.point-text{color:#1177bc}
 .box{padding:25px 25px 60px;border:5px solid #ddd}
 .box.indent{margin-top:30px}
 .ceo-message{width:1000px;height:530px;background:url(/images/cont-company.jpg) no-repeat 100% 0;line-height:2.2}
 .partner{margin:20px 0 30px;line-height:2.4}
 .address-map{width:1000px;height:570px;background:url(/images/cont-customer.jpg) no-repeat 100% 0;line-height:2.2}
 .address-map h4{margin-top:50px;font-size:24px}
-.address-map p{line-height: 2.2}
+.address-map p{line-height:2.2}
 .main #container .wrap>h3{margin-top:50px;font-size:26px;font-weight:700;text-align:center}
 .product-links{overflow:hidden;margin-top:115px}
 .product-links .link{overflow:hidden;display:block;float:left;width:235px;height:242px;background:url(/images/main-product-links.jpg) no-repeat;text-indent:-999em}
@@ -107,11 +112,13 @@ span.img>img{vertical-align:top}
 .product-links .link2{background-position:-257px 0}
 .product-links .link3{background-position:-515px 0}
 .product-links .link4{background-position:-772px 0}
-.box-gray{padding:25px;box-sizing: border-box;background-color:#DBD9DA;background-repeat:no-repeat;width:470px;padding-top:399px}
+.box-gray{padding:25px;box-sizing:border-box;background-color:#DBD9DA;background-repeat:no-repeat;width:470px;padding-top:399px}
 .box-gray.img1{background-image:url(/images/cont-product4-1.jpg)}
 .box-gray.img2{background-image:url(/images/cont-product4-2.jpg)}
 .box-gray.img3{background-image:url(/images/cont-product4-3.jpg)}
 .box-gray.img4{background-image:url(/images/cont-product4-4.jpg)}
-.flex-box{display: flex;	align-items: flex-start;}
-.flex-box .box-content{flex:1;padding-left: 25px;}
-.flex-box + .flex-box{margin-top: 55px;}
+.flex-box{display:flex;align-items:flex-start}
+.flex-box .box-content{flex:1;padding-left:25px}
+.flex-box + .flex-box{margin-top:55px}
+.product4 .flex-box h4{margin-top:50px}
+.product4 .flex-box .text-indent{text-indent: -10px;padding-left:10px;}
